@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "f6ac7b8118ff5d1bc0faee7f37bf6f8fd8f95602",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "XcodeEdit",
+        "repositoryURL": "https://github.com/tomlokhorst/XcodeEdit",
+        "state": {
+          "branch": null,
+          "revision": "6a27fefb6a0f1438c72cf5543cb5be07cfa00449",
+          "version": "2.7.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
