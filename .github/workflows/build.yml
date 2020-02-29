@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  # Trigger the workflow on push, but only for the master branch
+  push:
+    branches:
+      - master
+  # Also trigger on pull requests
+  pull_request:
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@latest
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
