@@ -17,6 +17,7 @@ let package = Package(
     targets: [
         .target(name: "ResourceGen", dependencies: [
             "ArgumentParser",
+            "XcodeEdit",
         ]),
         .testTarget(name: "ResourceGenTests", dependencies: ["ResourceGen"]),
     ])

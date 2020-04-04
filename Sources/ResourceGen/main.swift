@@ -1,26 +1,14 @@
 import ArgumentParser
+import Foundation
 
-struct Repeat: ParsableCommand {
-    @Flag(help: "Include a counter with each repetition.")
-    var includeCounter: Bool
+struct ResourceGen: ParsableCommand {
+    static var configuration = CommandConfiguration(
+        commandName: "resourcegen",
+        abstract: "An asset generator for Swift.",
+        subcommands: [GenerateCommand.self])
 
-    @Option(name: .shortAndLong, help: "The number of times to repeat 'phrase'.")
-    var count: Int?
-
-    @Argument(help: "The phrase to repeat.")
-    var phrase: String
-
-    func run() throws {
-        let repeatCount = count ?? .max
-
-        for i in 1 ... repeatCount {
-            if includeCounter {
-                print("\(i): \(phrase)")
-            } else {
-                print(phrase)
-            }
-        }
-    }
+    @Flag(name: .shortAndLong, help: "Output all logging.")
+    var verbose: Bool
 }
 
-Repeat.main()
+ResourceGen.main()

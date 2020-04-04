@@ -1,4 +1,3 @@
-@testable import ResourceGen
 import XCTest
 
 final class ResourceGenTests: XCTestCase {

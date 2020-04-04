@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "resource_gen"
-               BuildableName = "resource_gen"
-               BlueprintName = "resource_gen"
+               BlueprintIdentifier = "ResourceGen"
+               BuildableName = "ResourceGen"
+               BlueprintName = "ResourceGen"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -68,19 +68,19 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "resource_gen"
-            BuildableName = "resource_gen"
-            BlueprintName = "resource_gen"
+            BlueprintIdentifier = "ResourceGen"
+            BuildableName = "ResourceGen"
+            BlueprintName = "ResourceGen"
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--count 5"
+            argument = "generate"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "&quot;Hello, terminal&quot;"
+            argument = "--output R.generated.swift"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -95,9 +95,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "resource_gen"
-            BuildableName = "resource_gen"
-            BlueprintName = "resource_gen"
+            BlueprintIdentifier = "ResourceGen"
+            BuildableName = "ResourceGen"
+            BlueprintName = "ResourceGen"
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
